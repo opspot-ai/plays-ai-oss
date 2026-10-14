@@ -1,0 +1,783 @@
+[
+  {
+    "slug": "lead-bank-engine",
+    "name": "Lead-Bank Engine",
+    "tagline": "A ranked, deduplicated bank of audited leads with the evidence behind every grade, plus a call-ready shortlist the operator can work today, and not one message sent to a prospect.",
+    "category": "Sales & Leads",
+    "price": 499,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "d4aa76186dcc696b1cad9497aa8d26382b3ce8e4d8faf89bfb31eb0aa7f5ea62",
+    "flagship": true,
+    "summary": "A ranked, deduplicated bank of audited leads with the evidence behind every grade, plus a call-ready shortlist the operator can work today, and not one message sent to a prospect.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "web.fetch",
+      "contacts.search",
+      "business-directory.lookup",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A ranked, deduplicated bank of audited leads with the evidence behind every grade, plus a call-ready shortlist the operator can work today, and not one message sent to a prospect.",
+    "teamSize": 4,
+    "sampleOutput": "A validated lead bank engine artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "customer-setup-factory",
+    "name": "Customer Setup Factory",
+    "tagline": "A signed customer goes from agreed scope to a setup that has produced one real result, one confirmed action at a time, with every action that touches their systems approved by a person before it runs, every credential left where the operator put it instead of copied into the project, and an escalation packet rather than a retry loop when something will not come up.",
+    "category": "Setup & Delivery",
+    "price": 399,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "ca5d804d1471c13d9ded189ad102807284d593c75100f7adfb71400ac0b9f3fe",
+    "flagship": true,
+    "summary": "A signed customer goes from agreed scope to a setup that has produced one real result, one confirmed action at a time, with every action that touches their systems approved by a person before it runs, every credential left where the operator put it instead of copied into the project, and an escalation packet rather than a retry loop when something will not come up.",
+    "whatYouGet": [
+      "A complete 6-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "runtime-host.control",
+      "tool-connector.link",
+      "telephony.provision",
+      "mailbox.draft",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A signed customer goes from agreed scope to a setup that has produced one real result, one confirmed action at a time, with every action that touches their systems approved by a person before it runs, every credential left where the operator put it instead of copied into the project, and an escalation packet rather than a retry loop when something will not come up.",
+    "teamSize": 6,
+    "sampleOutput": "A validated customer setup factory artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "live-in-call-assistant",
+    "name": "Live In-Call Assistant",
+    "tagline": "A live call or meeting that everyone present has been told about turns into routed work items and quiet in-call suggestions before it ends, with no capture at all until a recorded consent basis says it may happen, no raw media kept, and nothing sent, booked, quoted, or spent by this play under any circumstances.",
+    "category": "Setup & Delivery",
+    "price": 349,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "c995d4ce3b0bca835764118ec953ac42732ae7358e309495454b97f96652e2c6",
+    "flagship": false,
+    "summary": "A live call or meeting that everyone present has been told about turns into routed work items and quiet in-call suggestions before it ends, with no capture at all until a recorded consent basis says it may happen, no raw media kept, and nothing sent, booked, quoted, or spent by this play under any circumstances.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "live-session.read",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A live call or meeting that everyone present has been told about turns into routed work items and quiet in-call suggestions before it ends, with no capture at all until a recorded consent basis says it may happen, no raw media kept, and nothing sent, booked, quoted, or spent by this play under any circumstances.",
+    "teamSize": 4,
+    "sampleOutput": "A validated live in call assistant artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "post-audit-sales-intro",
+    "name": "Post-Audit Sales Intro",
+    "tagline": "A qualified lead becomes one evidence-backed intro email that names something specific and true about that business, checked independently, and released only when the operator's own send license, caps, and suppression list all say yes, so nobody is contacted on a guess and no lead is dropped in silence.",
+    "category": "Sales & Leads",
+    "price": 349,
+    "availability": "available",
+    "bundleVersion": "2.0.1",
+    "tarballSha256": "5b2df27c6cf9b7aea84954951493730b1a9e9873fd90fbd942d612c155bd0c03",
+    "flagship": true,
+    "summary": "A qualified lead becomes one evidence-backed intro email that names something specific and true about that business, checked independently, and released only when the operator's own send license, caps, and suppression list all say yes, so nobody is contacted on a guess and no lead is dropped in silence.",
+    "whatYouGet": [
+      "A complete 7-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "web.fetch",
+      "contacts.search",
+      "outbound-email.send",
+      "fs.write"
+    ],
+    "outcome": "A qualified lead becomes one evidence-backed intro email that names something specific and true about that business, checked independently, and released only when the operator's own send license, caps, and suppression list all say yes, so nobody is contacted on a guess and no lead is dropped in silence.",
+    "teamSize": 7,
+    "sampleOutput": "A validated post audit sales intro artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "missed-call-ai-answer",
+    "name": "Missed-Call AI Voice Answer",
+    "tagline": "A call the business misses is answered by a bounded AI voice intake that captures who called and what they need, then lands a structured lead card and an approval-ready follow-up draft, so no missed call means a lost lead.",
+    "category": "Inbound & Follow-up",
+    "price": 299,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "9512042e304290ae966db299b63883c3642d66d28f4135ec7ddd8eeacdeb09e2",
+    "flagship": true,
+    "summary": "A call the business misses is answered by a bounded AI voice intake that captures who called and what they need, then lands a structured lead card and an approval-ready follow-up draft, so no missed call means a lost lead.",
+    "whatYouGet": [
+      "A complete 5-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "telephony.voice",
+      "telephony.sms",
+      "voice.realtime",
+      "fs.write"
+    ],
+    "outcome": "A call the business misses is answered by a bounded AI voice intake that captures who called and what they need, then lands a structured lead card and an approval-ready follow-up draft, so no missed call means a lost lead.",
+    "teamSize": 5,
+    "sampleOutput": "A validated missed call ai answer artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "custom-workflow-intake-to-playbook",
+    "name": "Custom Workflow Intake to Playbook",
+    "tagline": "A workflow somebody asked for becomes a classified, reusable, reviewed playbook proposal and a build packet instead of a one-off buried in a chat log, with an existing entry reused when one already covers it, a duplicate held rather than minted, and nothing about the operator's standing playbook changed until a person moves the proposal in.",
+    "category": "Setup & Delivery",
+    "price": 249,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "da7d99c1335a4b12d67640ac7230cc96b457e6fd12a0374eaef9540719f22c81",
+    "flagship": false,
+    "summary": "A workflow somebody asked for becomes a classified, reusable, reviewed playbook proposal and a build packet instead of a one-off buried in a chat log, with an existing entry reused when one already covers it, a duplicate held rather than minted, and nothing about the operator's standing playbook changed until a person moves the proposal in.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A workflow somebody asked for becomes a classified, reusable, reviewed playbook proposal and a build packet instead of a one-off buried in a chat log, with an existing entry reused when one already covers it, a duplicate held rather than minted, and nothing about the operator's standing playbook changed until a person moves the proposal in.",
+    "teamSize": 4,
+    "sampleOutput": "A validated custom workflow intake to playbook artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "deep-research-lane",
+    "name": "Deep Research Lane",
+    "tagline": "One research question becomes a source-backed dossier, reviewed and filed in the buyer's project with its limits stated, without anyone babysitting the job and without spending a crawl credit unless the operator licensed it.",
+    "category": "Research",
+    "price": 249,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "9b676c12b051de963ecc8d04ff01f5f1c62c990c1cb94172eef4123c91da735b",
+    "flagship": false,
+    "summary": "One research question becomes a source-backed dossier, reviewed and filed in the buyer's project with its limits stated, without anyone babysitting the job and without spending a crawl credit unless the operator licensed it.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "web.search",
+      "crawl.submit",
+      "fs.write"
+    ],
+    "outcome": "One research question becomes a source-backed dossier, reviewed and filed in the buyer's project with its limits stated, without anyone babysitting the job and without spending a crawl credit unless the operator licensed it.",
+    "teamSize": 4,
+    "sampleOutput": "A validated deep research lane artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "feedback-improvement-loop",
+    "name": "Feedback Improvement Loop",
+    "tagline": "The failures, complaints, and warnings a business generates every month stop dying in their own logs and become a short list of deduped improvement proposals, where the reversible ones become build cards on their own and everything touching money, credentials, customers, public surfaces, or a live system becomes a card that waits for a person.",
+    "category": "Ops & Self-healing",
+    "price": 199,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "3114044fe8a5f46384f075f65d6f877962155fc2cfff79cd3e417d7719a6e787",
+    "flagship": false,
+    "summary": "The failures, complaints, and warnings a business generates every month stop dying in their own logs and become a short list of deduped improvement proposals, where the reversible ones become build cards on their own and everything touching money, credentials, customers, public surfaces, or a live system becomes a card that waits for a person.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "The failures, complaints, and warnings a business generates every month stop dying in their own logs and become a short list of deduped improvement proposals, where the reversible ones become build cards on their own and everything touching money, credentials, customers, public surfaces, or a live system becomes a card that waits for a person.",
+    "teamSize": 4,
+    "sampleOutput": "A validated feedback improvement loop artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "review-repair-learning-loop",
+    "name": "Review Repair Learning Loop",
+    "tagline": "A marked-up draft goes back to whoever wrote it carrying the exact reasons, gets repaired and independently re-reviewed until it clears the bar or a bounded number of loops hands it to a person, and a reason that keeps coming back becomes a proposed drafting rule the operator approves rather than a rule the system quietly gives itself.",
+    "category": "Ops & Self-healing",
+    "price": 199,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "7a2aa949f819d55053770c7c439fdc9ad8c57d3ae0a27bb30f9a5786d10a09a5",
+    "flagship": false,
+    "summary": "A marked-up draft goes back to whoever wrote it carrying the exact reasons, gets repaired and independently re-reviewed until it clears the bar or a bounded number of loops hands it to a person, and a reason that keeps coming back becomes a proposed drafting rule the operator approves rather than a rule the system quietly gives itself.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A marked-up draft goes back to whoever wrote it carrying the exact reasons, gets repaired and independently re-reviewed until it clears the bar or a bounded number of loops hands it to a person, and a reason that keeps coming back becomes a proposed drafting rule the operator approves rather than a rule the system quietly gives itself.",
+    "teamSize": 4,
+    "sampleOutput": "A validated review repair learning loop artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "toll-free-cold-sms-outbound",
+    "name": "Toll-Free Cold SMS Outbound",
+    "tagline": "A staged outbound record becomes at most one text message, rendered from a template a human approved in advance, sent from a line the operator has attested is verified for this use, inside the recipient's daytime window and a daily cap, so a cold text is never composed at run time and never leaves without a named human decision behind it.",
+    "category": "Sales & Leads",
+    "price": 199,
+    "availability": "available",
+    "bundleVersion": "2.0.1",
+    "tarballSha256": "56a5be668786b1689b5667960be30fad64800b9a11c940b070295cfb36471c3a",
+    "flagship": false,
+    "summary": "A staged outbound record becomes at most one text message, rendered from a template a human approved in advance, sent from a line the operator has attested is verified for this use, inside the recipient's daytime window and a daily cap, so a cold text is never composed at run time and never leaves without a named human decision behind it.",
+    "whatYouGet": [
+      "A complete 5-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "sms.send",
+      "fs.write"
+    ],
+    "outcome": "A staged outbound record becomes at most one text message, rendered from a template a human approved in advance, sent from a line the operator has attested is verified for this use, inside the recipient's daytime window and a daily cap, so a cold text is never composed at run time and never leaves without a named human decision behind it.",
+    "teamSize": 5,
+    "sampleOutput": "A validated toll free cold sms outbound artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "adaptive-intake-questionnaire",
+    "name": "Adaptive Intake Questionnaire",
+    "tagline": "The holes left in a customer's intake record after the first conversation become one short questionnaire that asks only for what genuinely cannot be inferred, goes out once inside caps and quiet hours, and comes back merged into the same record without a single already-answered fact being overwritten.",
+    "category": "Setup & Delivery",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "382e397d9788ae8e459608f4b771bb95c59529d0f189b0348eb0c99d8dc23e07",
+    "flagship": false,
+    "summary": "The holes left in a customer's intake record after the first conversation become one short questionnaire that asks only for what genuinely cannot be inferred, goes out once inside caps and quiet hours, and comes back merged into the same record without a single already-answered fact being overwritten.",
+    "whatYouGet": [
+      "A complete 6-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "messaging.send",
+      "form-publish.create",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "The holes left in a customer's intake record after the first conversation become one short questionnaire that asks only for what genuinely cannot be inferred, goes out once inside caps and quiet hours, and comes back merged into the same record without a single already-answered fact being overwritten.",
+    "teamSize": 6,
+    "sampleOutput": "A validated adaptive intake questionnaire artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "brain-dump-to-card",
+    "name": "Brain-Dump to Task Card",
+    "tagline": "A messy dump that carries an explicit work command becomes one owned, bounded task card with observable acceptance checks, and a dump that is only thinking out loud becomes nothing at all.",
+    "category": "Ops & Self-healing",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "611bd4078f71f940c36ed62cd0d31c5cf1118dedb9bf2752d54236aa40735a6c",
+    "flagship": false,
+    "summary": "A messy dump that carries an explicit work command becomes one owned, bounded task card with observable acceptance checks, and a dump that is only thinking out loud becomes nothing at all.",
+    "whatYouGet": [
+      "A complete 3-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A messy dump that carries an explicit work command becomes one owned, bounded task card with observable acceptance checks, and a dump that is only thinking out loud becomes nothing at all.",
+    "teamSize": 3,
+    "sampleOutput": "A validated brain dump to card artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "client-health-auto-repair",
+    "name": "Client Health Auto-Repair",
+    "tagline": "A down customer agent runtime is detected or customer-reported, the customer gets an immediate acknowledgement, the runtime is repaired within strict bounds, and recovery is proven on the customer's live channel, with receipts end to end.",
+    "category": "Ops & Self-healing",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.1.0",
+    "tarballSha256": "adad31b4b17fc2cd69ea236535cd5747cdf869b7103fa20b81ad84d6627583fb",
+    "flagship": false,
+    "summary": "A down customer agent runtime is detected or customer-reported, the customer gets an immediate acknowledgement, the runtime is repaired within strict bounds, and recovery is proven on the customer's live channel, with receipts end to end.",
+    "whatYouGet": [
+      "A complete 5-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "runtime-host.control",
+      "customer-channel.send",
+      "operator-alerts.send",
+      "fs.write"
+    ],
+    "outcome": "A down customer agent runtime is detected or customer-reported, the customer gets an immediate acknowledgement, the runtime is repaired within strict bounds, and recovery is proven on the customer's live channel, with receipts end to end.",
+    "teamSize": 5,
+    "sampleOutput": "A validated client health auto repair artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "content-publish-package",
+    "name": "Content Publish Package",
+    "tagline": "A finished content asset becomes one channel-ready publish packet whose every claim, right, and disclosure has been checked independently, and that packet reaches a public channel only after the operator armed that channel and approved that exact packet, so nothing here is ever posted on the play's own judgment.",
+    "category": "Content & Presence",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.1",
+    "tarballSha256": "cad4c02a44896a674718b0ce20393781312d5595171ea28092063ab803c03b8c",
+    "flagship": false,
+    "summary": "A finished content asset becomes one channel-ready publish packet whose every claim, right, and disclosure has been checked independently, and that packet reaches a public channel only after the operator armed that channel and approved that exact packet, so nothing here is ever posted on the play's own judgment.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "media.inspect",
+      "social-publish.post",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A finished content asset becomes one channel-ready publish packet whose every claim, right, and disclosure has been checked independently, and that packet reaches a public channel only after the operator armed that channel and approved that exact packet, so nothing here is ever posted on the play's own judgment.",
+    "teamSize": 4,
+    "sampleOutput": "A validated content publish package artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "customer-hydration-logging",
+    "name": "Customer Hydration and Logging",
+    "tagline": "Every customer-facing action starts from the customer's full current history and ends with a privacy-safe activity record, so the runtime never acts on a customer blind and never loses what happened.",
+    "category": "Ops & Self-healing",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "05bf472701fb2595c6cbac2e33a0aac476814c34ca116c72b6a63792a1aa56e3",
+    "flagship": false,
+    "summary": "Every customer-facing action starts from the customer's full current history and ends with a privacy-safe activity record, so the runtime never acts on a customer blind and never loses what happened.",
+    "whatYouGet": [
+      "A complete 3-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "fs.write"
+    ],
+    "outcome": "Every customer-facing action starts from the customer's full current history and ends with a privacy-safe activity record, so the runtime never acts on a customer blind and never loses what happened.",
+    "teamSize": 3,
+    "sampleOutput": "A validated customer hydration logging artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "inbound-email-triage-reply",
+    "name": "Inbound Email Triage Reply",
+    "tagline": "Every message in the watched inbox is classified, gated, and either answered once with a reviewed reply inside caps and quiet hours, or handed to a human with the reason, so nothing sits unread and nothing gets an automatic answer it should not have.",
+    "category": "Inbound & Follow-up",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.1.0",
+    "tarballSha256": "8b9e2edb9a96a6e8856b994b37b406a670c6ecccd8a6c30c4469515fee7fa799",
+    "flagship": false,
+    "summary": "Every message in the watched inbox is classified, gated, and either answered once with a reviewed reply inside caps and quiet hours, or handed to a human with the reason, so nothing sits unread and nothing gets an automatic answer it should not have.",
+    "whatYouGet": [
+      "A complete 5-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "mailbox.read",
+      "mailbox.send",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "Every message in the watched inbox is classified, gated, and either answered once with a reviewed reply inside caps and quiet hours, or handed to a human with the reason, so nothing sits unread and nothing gets an automatic answer it should not have.",
+    "teamSize": 5,
+    "sampleOutput": "A validated inbound email triage reply artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "realtime-voice-handoff",
+    "name": "Realtime Voice Handoff",
+    "tagline": "A spoken request to the operator's voice front door becomes either an answer that changes nothing or one durable, bounded handoff packet naming the role that owns the work, because the front door routes and answers and performs no gated action of any kind itself.",
+    "category": "Inbound & Follow-up",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "b4c535d12e0d0ce570440096448d02051a9e7c1f9f68b20b4a0d23fff1016117",
+    "flagship": false,
+    "summary": "A spoken request to the operator's voice front door becomes either an answer that changes nothing or one durable, bounded handoff packet naming the role that owns the work, because the front door routes and answers and performs no gated action of any kind itself.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "voice-front-door.session",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A spoken request to the operator's voice front door becomes either an answer that changes nothing or one durable, bounded handoff packet naming the role that owns the work, because the front door routes and answers and performs no gated action of any kind itself.",
+    "teamSize": 4,
+    "sampleOutput": "A validated realtime voice handoff artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "unified-inbound-reply",
+    "name": "Unified Inbound Reply",
+    "tagline": "A real person who texts the business gets a human-paced answer on whichever line they used, an unknown sender gets one approved opener and never a second, and anything that should not be answered by a machine stays silent and reaches a person, so nobody ever texts the business and gets nothing back.",
+    "category": "Inbound & Follow-up",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.1.0",
+    "tarballSha256": "3f9e08d33eb06d416703b4bbe69c40209dfe6c755ac1fd1ba5df39968d61b3d3",
+    "flagship": false,
+    "summary": "A real person who texts the business gets a human-paced answer on whichever line they used, an unknown sender gets one approved opener and never a second, and anything that should not be answered by a machine stays silent and reaches a person, so nobody ever texts the business and gets nothing back.",
+    "whatYouGet": [
+      "A complete 6-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "message-line.read",
+      "message-line.send",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A real person who texts the business gets a human-paced answer on whichever line they used, an unknown sender gets one approved opener and never a second, and anything that should not be answered by a machine stays silent and reaches a person, so nobody ever texts the business and gets nothing back.",
+    "teamSize": 6,
+    "sampleOutput": "A validated unified inbound reply artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "watchdog-incident-route",
+    "name": "Watchdog Incident Route",
+    "tagline": "A problem in a live lane is detected from its own machine-readable signals, turned into one owner card carrying evidence, severity, and the recommended next action, and put in front of the operator once rather than every ten minutes, so nothing breaks quietly and nothing gets repaired by something that was only supposed to be watching.",
+    "category": "Ops & Self-healing",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "df1c64b0b9c5968877d15bfbc6cc765c27920cf430c79668e60cf9168486c695",
+    "flagship": false,
+    "summary": "A problem in a live lane is detected from its own machine-readable signals, turned into one owner card carrying evidence, severity, and the recommended next action, and put in front of the operator once rather than every ten minutes, so nothing breaks quietly and nothing gets repaired by something that was only supposed to be watching.",
+    "whatYouGet": [
+      "A complete 3-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "monitor.read",
+      "operator-alerts.send",
+      "fs.write"
+    ],
+    "outcome": "A problem in a live lane is detected from its own machine-readable signals, turned into one owner card carrying evidence, severity, and the recommended next action, and put in front of the operator once rather than every ten minutes, so nothing breaks quietly and nothing gets repaired by something that was only supposed to be watching.",
+    "teamSize": 3,
+    "sampleOutput": "A validated watchdog incident route artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "weekly-memory-consolidation",
+    "name": "Weekly Memory Consolidation",
+    "tagline": "Once a week the operating memory of a business gets reconciled against what actually happened, so drift, duplicated facts, facts that went stale, and outright gaps become an append-only set of proposals and repair cards routed to the roles that own them, without a single line of the standing memory being edited by the thing that reads it.",
+    "category": "Ops & Self-healing",
+    "price": 149,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "a0a874cf02108fb16e51f0a4f6e76251c3b3171191bfa0d4a8f2ed576a2a5610",
+    "flagship": false,
+    "summary": "Once a week the operating memory of a business gets reconciled against what actually happened, so drift, duplicated facts, facts that went stale, and outright gaps become an append-only set of proposals and repair cards routed to the roles that own them, without a single line of the standing memory being edited by the thing that reads it.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "Once a week the operating memory of a business gets reconciled against what actually happened, so drift, duplicated facts, facts that went stale, and outright gaps become an append-only set of proposals and repair cards routed to the roles that own them, without a single line of the standing memory being edited by the thing that reads it.",
+    "teamSize": 4,
+    "sampleOutput": "A validated weekly memory consolidation artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "customer-follow-up-machine",
+    "name": "Customer Follow-Up Machine",
+    "tagline": "A customer who is owed a follow-up gets exactly one, in the business's own voice, at the moment it is still worth sending, so a new lead is answered while it is warm, a quiet quote is nudged once instead of never, and a finished job gets its review ask, with the whole history read first and every send held behind a license, an opt-out list, quiet hours, and a cap.",
+    "category": "Sales & Leads",
+    "price": 129,
+    "availability": "available",
+    "bundleVersion": "2.0.1",
+    "tarballSha256": "6268a9082efa834f4bfdd05a4278cb4c20e455a0dbb37e74cb27e0082e2f4e06",
+    "flagship": false,
+    "summary": "A customer who is owed a follow-up gets exactly one, in the business's own voice, at the moment it is still worth sending, so a new lead is answered while it is warm, a quiet quote is nudged once instead of never, and a finished job gets its review ask, with the whole history read first and every send held behind a license, an opt-out list, quiet hours, and a cap.",
+    "whatYouGet": [
+      "A complete 6-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "messaging.send",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A customer who is owed a follow-up gets exactly one, in the business's own voice, at the moment it is still worth sending, so a new lead is answered while it is warm, a quiet quote is nudged once instead of never, and a finished job gets its review ask, with the whole history read first and every send held behind a license, an opt-out list, quiet hours, and a cap.",
+    "teamSize": 6,
+    "sampleOutput": "A validated customer follow up machine artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "alert-noise-throttle",
+    "name": "Alert Noise Throttle",
+    "tagline": "An urgent alert always reaches the operator immediately, a routine one is deduplicated and held once the operator has stopped answering, and everything held comes back in a batched digest on a schedule, so the operator never learns to ignore the channel and nothing is ever quietly dropped to keep it quiet.",
+    "category": "Ops & Self-healing",
+    "price": 99,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "153b2645ba44a9eca74a44549114e31c02ee3992e2867f29bc6e77788747e4f2",
+    "flagship": false,
+    "summary": "An urgent alert always reaches the operator immediately, a routine one is deduplicated and held once the operator has stopped answering, and everything held comes back in a batched digest on a schedule, so the operator never learns to ignore the channel and nothing is ever quietly dropped to keep it quiet.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-alerts.send",
+      "fs.write"
+    ],
+    "outcome": "An urgent alert always reaches the operator immediately, a routine one is deduplicated and held once the operator has stopped answering, and everything held comes back in a batched digest on a schedule, so the operator never learns to ignore the channel and nothing is ever quietly dropped to keep it quiet.",
+    "teamSize": 4,
+    "sampleOutput": "A validated alert noise throttle artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "booking-follow-up",
+    "name": "Booking Follow-Up",
+    "tagline": "A new booking is caught within minutes, the operator hears about it immediately, the person who booked gets exactly one warm confirmation inside quiet hours and caps, and the meeting record carries the prep the operator needs before they walk in, so a booked call is never a surprise and never gets double-messaged.",
+    "category": "Inbound & Follow-up",
+    "price": 99,
+    "availability": "available",
+    "bundleVersion": "2.1.0",
+    "tarballSha256": "6bd1689d67b28710c9c66847c23981ca5e0037b57eda7bbd6729e925aed11648",
+    "flagship": false,
+    "summary": "A new booking is caught within minutes, the operator hears about it immediately, the person who booked gets exactly one warm confirmation inside quiet hours and caps, and the meeting record carries the prep the operator needs before they walk in, so a booked call is never a surprise and never gets double-messaged.",
+    "whatYouGet": [
+      "A complete 8-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "booking-source.read",
+      "calendar.read",
+      "web.fetch",
+      "messaging.send",
+      "voice.call",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A new booking is caught within minutes, the operator hears about it immediately, the person who booked gets exactly one warm confirmation inside quiet hours and caps, and the meeting record carries the prep the operator needs before they walk in, so a booked call is never a surprise and never gets double-messaged.",
+    "teamSize": 8,
+    "sampleOutput": "A validated booking follow up artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "receipt-pii-scrub",
+    "name": "Receipt PII Scrub",
+    "tagline": "A send record is written without the recipient's raw contact details ever reaching it, older records still carrying them are rewritten into masked forms that cannot be used to contact anybody, audit utility survives the rewrite intact, and every scrub leaves an append-only record of which classes were removed and how many, never of what they were.",
+    "category": "Ops & Self-healing",
+    "price": 99,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "ba710a3897c46710f20f031b9dc844cf0f5127ac79d76066f2311f3e8902fac6",
+    "flagship": false,
+    "summary": "A send record is written without the recipient's raw contact details ever reaching it, older records still carrying them are rewritten into masked forms that cannot be used to contact anybody, audit utility survives the rewrite intact, and every scrub leaves an append-only record of which classes were removed and how many, never of what they were.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "operator-alerts.send",
+      "fs.write"
+    ],
+    "outcome": "A send record is written without the recipient's raw contact details ever reaching it, older records still carrying them are rewritten into masked forms that cannot be used to contact anybody, audit utility survives the rewrite intact, and every scrub leaves an append-only record of which classes were removed and how many, never of what they were.",
+    "teamSize": 4,
+    "sampleOutput": "A validated receipt pii scrub artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  },
+  {
+    "slug": "voice-note-capture-routing",
+    "name": "Voice Note Capture Routing",
+    "tagline": "A voice note the operator deliberately started and stopped in their workspace app becomes one retained transcript in a single obvious place and one bounded work packet naming the role that owns it, with no ambient listening, no audio kept, no secret written into a durable file, and nothing performed on the strength of something somebody said out loud.",
+    "category": "Ops & Self-healing",
+    "price": 99,
+    "availability": "available",
+    "bundleVersion": "2.0.0",
+    "tarballSha256": "50666e938a395f7af38d6db660f6aed931595b08b2ad81d27d21a4293bad1f07",
+    "flagship": false,
+    "summary": "A voice note the operator deliberately started and stopped in their workspace app becomes one retained transcript in a single obvious place and one bounded work packet naming the role that owns it, with no ambient listening, no audio kept, no secret written into a durable file, and nothing performed on the strength of something somebody said out loud.",
+    "whatYouGet": [
+      "A complete 4-member Team",
+      "The version-pinned Play, Player configurations, typed handoffs, schemas, and fixtures",
+      "Project-local adapters for Claude Code, Codex, Cursor, Hermes, and OpenClaw",
+      "Offline verification and Player-aware run receipts"
+    ],
+    "toolsNeeded": [
+      "workspace-capture.read",
+      "operator-handoff.send",
+      "fs.write"
+    ],
+    "outcome": "A voice note the operator deliberately started and stopped in their workspace app becomes one retained transcript in a single obvious place and one bounded work packet naming the role that owns it, with no ambient listening, no audio kept, no secret written into a durable file, and nothing performed on the strength of something somebody said out loud.",
+    "teamSize": 4,
+    "sampleOutput": "A validated voice note capture routing artifact written inside your project.",
+    "safety": [
+      "Runs in your project with credentials you control",
+      "No runtime phone-home permission check",
+      "Declared caps, stop conditions, and verification gates"
+    ]
+  }
+]

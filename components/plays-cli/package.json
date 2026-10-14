@@ -1,0 +1,24 @@
+{
+  "name": "@plays-ai/cli",
+  "version": "1.0.1",
+  "description": "Install and run harness-neutral playbundle/v1 loops on your own providers.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" },
+  "bin": { "plays": "dist/index.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "smol-toml": "^1.4.2",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "typescript": "^5.7.3"
+  }
+}

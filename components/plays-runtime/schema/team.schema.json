@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/plays-ai/schemas/team.schema.json",
+  "title": "playbundle/v2 Team",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec", "name", "quarterback", "lineup", "handoffs"],
+  "properties": {
+    "spec": { "const": "playteam/v1" },
+    "name": { "type": "string", "minLength": 1 },
+    "quarterback": { "$ref": "#/$defs/id" },
+    "lineup": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["player", "position", "assignment", "steps"],
+        "properties": {
+          "player": { "$ref": "#/$defs/id" },
+          "position": {
+            "enum": ["quarterback", "center", "lineman", "running-back", "wide-receiver", "tight-end", "linebacker", "safety", "kicker"]
+          },
+          "assignment": { "type": "string", "minLength": 1 },
+          "steps": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$" }
+          }
+        }
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "from", "to", "artifact"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "from": { "$ref": "#/$defs/id" },
+          "to": { "$ref": "#/$defs/id" },
+          "artifact": { "type": "string", "minLength": 1 },
+          "schema": { "type": "string", "pattern": "^(?!/)(?!.*\\.\\.)[^\\\\]+$" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+  }
+}

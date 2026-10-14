@@ -1,0 +1,46 @@
+{
+  "name": "plays-ai",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Plays \u2014 the marketplace for AI agent workflows (plays). Install a play into your agent setup, connect your tools, and it runs.",
+  "scripts": {
+    "dev": "next dev -p 4720",
+    "build": "next build && node scripts/scan-public-build.mjs",
+    "start": "next start -p 4720",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm test:unit && pnpm test:db",
+    "test:unit": "node scripts/run-unit-tests.mjs",
+    "test:db": "node scripts/run-database-tests.mjs database",
+    "test:auth": "node scripts/run-database-tests.mjs auth",
+    "contrast": "node scripts/check-theme-contrast.mjs",
+    "check:routes": "node scripts/check-route-drift.mjs",
+    "check:copy": "node scripts/check-copy-drift.mjs",
+    "scan:public": "node scripts/scan-public-build.mjs",
+    "verify": "pnpm test && pnpm test:auth && pnpm typecheck && pnpm lint && pnpm contrast && pnpm check:routes && pnpm check:copy && pnpm build",
+    "e2e": "node scripts/run-e2e-tests.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "next": "15.5.22",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "stripe": "17.7.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "22.10.5",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "15.5.22",
+    "postgres": "^3.4.7",
+    "supabase": "2.109.1",
+    "typescript": "5.7.3",
+    "vitest": "^3.2.4",
+    "yaml": "^2.8.2"
+  }
+}

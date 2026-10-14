@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/plays-ai/schemas/play.schema.json",
+  "title": "playbundle/v2 manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec", "play", "version", "name", "outcome", "team", "license", "loop", "requires", "models", "routing", "receipts"],
+  "properties": {
+    "spec": { "const": "playbundle/v2" },
+    "play": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$" },
+    "name": { "type": "string", "minLength": 1 },
+    "outcome": { "type": "string", "minLength": 1 },
+    "team": { "const": "team.yaml" },
+    "source_play": { "type": "string", "pattern": "^P[0-9]{3}$" },
+    "exported_from_sha": { "type": "string", "pattern": "^[0-9a-f]{7,64}$" },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sku", "grant", "updates_until"],
+      "properties": {
+        "sku": { "type": "string", "pattern": "^plays\\.ai/[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "grant": { "const": "single-org-source-visible" },
+        "updates_until": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?Z$"
+        }
+      }
+    },
+    "loop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entrypoint", "trigger", "max_steps_per_run", "idempotency_key", "resume_from", "stop_conditions"],
+      "properties": {
+        "entrypoint": { "$ref": "#/$defs/relativePath" },
+        "trigger": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "default", "overridable"],
+          "properties": {
+            "type": { "enum": ["manual", "cron", "event"] },
+            "default": { "type": "string", "minLength": 1 },
+            "overridable": { "type": "boolean" }
+          }
+        },
+        "max_steps_per_run": { "type": "integer", "minimum": 1 },
+        "idempotency_key": { "type": "string", "minLength": 1 },
+        "resume_from": { "$ref": "#/$defs/relativePath" },
+        "stop_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "requires": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tools", "secrets", "data", "caps"],
+      "properties": {
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "why", "binding"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z][a-z0-9.-]*$" },
+              "why": { "type": "string", "minLength": 1 },
+              "binding": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["kind"],
+                "properties": {
+                  "kind": { "enum": ["any-of", "builtin", "mcp", "executable"] },
+                  "suggest": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+                  "path_scope": { "type": "string", "minLength": 1 },
+                  "command": { "type": "string", "minLength": 1 }
+                }
+              },
+              "optional": { "type": "boolean" },
+              "degrade": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "secrets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "resolver"],
+            "properties": {
+              "key": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]*$" },
+              "scope": { "type": "string", "minLength": 1 },
+              "optional": { "type": "boolean" },
+              "resolver": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^(env|keychain|op://<vault>/<item>/(credential|password))$"
+                }
+              }
+            }
+          }
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "path", "mode", "default"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+              "path": { "$ref": "#/$defs/relativePath" },
+              "mode": { "enum": ["read", "write", "read-write"] },
+              "default": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "caps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "default"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+              "default": { "type": "number", "minimum": 0 },
+              "unit": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "models": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tiers", "policy"],
+      "properties": {
+        "tiers": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^[a-z][a-z0-9-]*$" },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["needs", "min_context"],
+            "properties": {
+              "needs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+              "min_context": { "type": "integer", "minimum": 1 }
+            }
+          }
+        },
+        "policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["subscription_first", "escalate_on_invalid"],
+          "properties": {
+            "subscription_first": { "type": "boolean" },
+            "escalate_on_invalid": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "routing": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["step", "player", "tier"],
+        "properties": {
+          "step": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$" },
+          "player": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "tier": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "needs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "est_tokens": { "type": "integer", "minimum": 0 },
+          "validate": { "$ref": "#/$defs/relativePath" },
+          "must_differ_from": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$" },
+          "deterministic": { "$ref": "#/$defs/relativePath" },
+          "gated_by": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$" },
+          "decision": { "type": "string", "minLength": 1 }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "tier": { "const": "none" } } },
+            "then": { "required": ["deterministic"] },
+            "else": { "required": ["est_tokens"] }
+          }
+        ]
+      }
+    },
+    "receipts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dir"],
+      "properties": { "dir": { "$ref": "#/$defs/relativePath" } }
+    }
+  },
+  "$defs": {
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*\\.\\.)[^\\\\]+$"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/plays-ai/schemas/player.schema.json",
+  "title": "playbundle/v2 Player",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec", "id", "name", "mission", "capabilities", "boundaries", "memory_policy", "tool_needs", "model_requirements"],
+  "properties": {
+    "spec": { "const": "playplayer/v1" },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "mission": { "type": "string", "minLength": 1 },
+    "capabilities": { "$ref": "#/$defs/list" },
+    "boundaries": { "$ref": "#/$defs/list" },
+    "memory_policy": { "type": "string", "minLength": 1 },
+    "tool_needs": { "$ref": "#/$defs/list" },
+    "model_requirements": { "$ref": "#/$defs/list" }
+  },
+  "$defs": {
+    "list": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

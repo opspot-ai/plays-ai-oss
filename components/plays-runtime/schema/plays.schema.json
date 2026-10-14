@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/plays-ai/schemas/plays.schema.json",
+  "title": "plays.toml parsed form",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["providers", "routing"],
+  "properties": {
+    "providers": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "base_url", "model", "tiers"],
+            "properties": {
+              "kind": { "const": "endpoint" },
+              "base_url": { "type": "string", "pattern": "^https?://" },
+              "model": { "type": "string", "minLength": 1 },
+              "tiers": { "$ref": "#/$defs/tiers" },
+              "needs": { "$ref": "#/$defs/needs" },
+              "cost_per_1k": { "type": "number", "minimum": 0 },
+              "reserve_for": { "$ref": "#/$defs/tiers" },
+              "exhausted": { "type": "boolean" }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "exec", "tiers"],
+            "properties": {
+              "kind": { "const": "subscription" },
+              "exec": { "enum": ["claude -p", "codex exec"] },
+              "tiers": { "$ref": "#/$defs/tiers" },
+              "needs": { "$ref": "#/$defs/needs" },
+              "window": { "type": "string", "pattern": "^[0-9]+[hm]$" },
+              "concurrency": { "type": "integer", "minimum": 1 },
+              "reserve_for": { "$ref": "#/$defs/tiers" },
+              "exhausted": { "type": "boolean" }
+            }
+          }
+        ]
+      }
+    },
+    "routing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "spillover", "on_all_exhausted"],
+      "properties": {
+        "order": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "spillover": { "type": "boolean" },
+        "on_all_exhausted": { "const": "pause-and-resume" }
+      }
+    }
+  },
+  "$defs": {
+    "tiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+    },
+    "needs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

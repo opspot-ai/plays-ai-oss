@@ -1,0 +1,52 @@
+spec: playbundle/v2
+play: reference-loop
+version: 1.0.0
+name: Reference Loop
+outcome: A reviewed brief and deterministic package generated from synthetic input.
+team: team.yaml
+license:
+  sku: plays.ai/reference-loop
+  grant: single-org-source-visible
+  updates_until: null
+loop:
+  entrypoint: steps/00-run.md
+  trigger: {type: manual, default: manual, overridable: true}
+  max_steps_per_run: 4
+  idempotency_key: "{{input_sha}}"
+  resume_from: state/cursor.json
+  stop_conditions:
+    - package written
+    - "kill file present: .plays/state/reference-loop.killed"
+requires:
+  tools:
+    - id: fs.write
+      why: writes the final package
+      binding: {kind: builtin, path_scope: "{{data.output}}"}
+    - id: text.decorate
+      why: optionally decorates the final heading
+      binding: {kind: executable, command: decorate}
+      optional: true
+      degrade: keeps the plain heading
+  secrets:
+    - key: REFERENCE_OPTIONAL_TOKEN
+      scope: fixture-only
+      optional: true
+      resolver: [env, keychain, "op://<vault>/<item>/credential"]
+  data:
+    - {id: output, path: output/, mode: read-write, default: ./output}
+  caps:
+    - {id: daily_credit_cap, default: 20, unit: provider-credits}
+    - {id: per_run_usd_max, default: 1}
+models:
+  tiers:
+    cheap: {needs: [json-out], min_context: 8000}
+    working: {needs: [json-out], min_context: 32000}
+    frontier: {needs: [judgment], min_context: 120000}
+  policy: {subscription_first: true, escalate_on_invalid: true}
+routing:
+  - {step: 01-extract, player: scout, tier: cheap, est_tokens: 500, validate: schemas/facts.json}
+  - {step: 02-draft, player: scribe, tier: working, est_tokens: 800}
+  - {step: 03-review, player: redpen, tier: frontier, est_tokens: 400, must_differ_from: 02-draft}
+  - {step: 04-package, player: scribe, tier: none, deterministic: tools/package.mjs}
+receipts:
+  dir: state/receipts/

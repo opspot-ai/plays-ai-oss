@@ -1,0 +1,20 @@
+spec: playteam/v1
+name: Reference Team
+quarterback: scribe
+lineup:
+  - player: scribe
+    position: quarterback
+    assignment: Own the brief and package the verified result.
+    steps: [02-draft, 04-package]
+  - player: scout
+    position: center
+    assignment: Start the play by extracting structured facts.
+    steps: [01-extract]
+  - player: redpen
+    position: safety
+    assignment: Independently review the drafted brief.
+    steps: [03-review]
+handoffs:
+  - {id: facts-to-draft, from: scout, to: scribe, artifact: facts, schema: schemas/facts.json}
+  - {id: draft-to-review, from: scribe, to: redpen, artifact: draft}
+  - {id: review-to-package, from: redpen, to: scribe, artifact: reviewed-draft}

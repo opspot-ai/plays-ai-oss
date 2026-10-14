@@ -1,0 +1,21 @@
+[providers.codex_sub]
+kind = "subscription"
+exec = "codex exec"
+tiers = ["cheap", "working"]
+needs = ["json-out", "long-context", "tool-use"]
+window = "5h"
+concurrency = 1
+
+[providers.claude_max]
+kind = "subscription"
+exec = "claude -p"
+tiers = ["working", "frontier"]
+needs = ["json-out", "long-context", "tool-use", "judgment"]
+window = "5h"
+concurrency = 1
+reserve_for = ["frontier"]
+
+[routing]
+order = ["codex_sub", "claude_max"]
+spillover = true
+on_all_exhausted = "pause-and-resume"
